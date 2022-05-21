@@ -26,7 +26,7 @@
                 <input id="pwd" type="password" placeholder="password" name="pwd">
                 <input id="cpwd" type="password" placeholder="confirm password" name="cpwd">
 
-                <button type="submit" id="btn_register" class="btn btn-success>register</button>
+                <button type="submit" id="btn_register" class="btn btn-success">register</button>
 
                 <div id="login_more">
                     

@@ -332,7 +332,7 @@ header nav#openbars{
 
 
 
-main, form{
+main ,form{
     min-height: 80vh;
     width: 100%;
     display: flex;

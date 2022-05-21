@@ -1,0 +1,408 @@
+:root{
+    --first-color:#9e962f;
+    --third-color:#fff;
+    --fourth-color:#000;
+    --font-family:"Candara";
+    --font-big:40px;
+    --font-mid:28px;
+    --font-small:18px;
+    --width-min:60%;
+    --box-shadow:rgba(0, 0, 0, 0.2) 0px 6px 20px 0px;
+}
+
+
+html,body{
+    background-color: var(--third-color);
+    margin: 0;padding: 0;
+    font-family: var(--font-family);
+}
+
+#header{
+    position: fixed;
+    left: 0;
+    right:0;
+    width: 100%;
+    height: 10vh;
+    z-index: 2;
+    background: var(--third-color);
+}
+header{
+    height: 10vh;
+    width: var(--width-min);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header img{
+    height: 6vh !important;
+}
+.active{
+    font-weight: bolder;
+    color: var(--first-color);
+}
+header nav a{
+    font-size: var(--font-small);
+    text-decoration: none;
+    color: var(--fourth-color);
+    margin-left: 4vh;}
+header nav .bars{
+    width: 3vh;
+    height: 2px;
+    background-color: var(--fourth-color);
+    margin-top: 4px;
+}
+
+section,footer{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{font-size: var(--font-big);}
+section#intro button{
+    margin-top: 3vh;
+    border-radius: 40px;
+    font-size: var(--font-mid);
+    border: none;
+    width: max-content;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    height: 10vh;
+    background-color: var(--first-color);
+    color: var(--third-color);
+}
+section#services .boxes{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    flex-wrap: wrap;
+}
+section#services .boxes .box{
+    height: 40vh;
+    width: 29%;
+    margin: 2%;
+    border-radius: 10px;
+    box-shadow:var(--box-shadow) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+i#icon{
+    font-size: var(--font-big);
+    color: var(--first-color);
+    padding: 2vh;
+}
+
+
+section#search .search-box{
+    margin-top: 2vh;
+    position: relative;
+    width: calc(var(--width-min)/2);
+}
+section#search .search-box input{
+    text-align: center;
+    font-size: var(--font-small);
+    width: 100%;
+    border-radius: 50px;
+    height: 9vh;
+    box-shadow: var(--box-shadow);
+    border: none;
+}
+
+section#search .search-box button{
+    height: 8vh;
+    position: absolute;
+    top: 8%;
+    color: var(--first-color);
+    font-size: var(--font-mid);
+    background-color: transparent;
+    right: 4%;
+    margin: 0;
+    border: none;
+}
+
+
+/*
+* PROFILE
+* PAGES
+*/
+section#about{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 10vh;
+    align-items: flex-start;
+    font-size: var(--font-mid);
+    padding-bottom: 10vh;
+}
+section#about .post{
+    width: 50%;
+    min-height: 100vh;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section#about .post #post-what{
+    margin-top: 10vh;
+    min-height: 20vh;
+    width: 100%;
+}
+section#about .post #post-what
+.input-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section#about .post-what-content #add-text{
+    display: flex;
+    flex-direction: row;
+  
+    width: 60%;
+    margin:2px auto;
+    margin-top: 2vh;
+}
+section#about .post-what-content #add-text textarea{
+    width: 80%;
+    height: 60px;
+    border: none;
+    padding: 2%;
+    background: none;
+    box-shadow: var(--box-shadow);
+    border-radius:5px;
+    font-size: var(--font-small);
+}
+section#about .post-what-content #add-text button{
+    border: none;
+    border-radius:4px;
+    margin-left: 2%;
+    background-color:none;
+    font-size: var(--font-small);
+    box-shadow: var(--box-shadow);
+
+}
+  
+
+
+section#about .post #input{
+    margin: 1%;
+    display: flex;
+    line-height: 8vh;
+    color:var(--fourth-color);
+    padding-left: 1vh;
+    padding-right:1vh;
+    font-size: var(--font-small);
+    text-align: center;
+    width: max-content !important;
+    border: none;
+    border-radius: 8px;
+    height: 8vh;
+    box-shadow: var(--box-shadow);
+}
+section#about .post #input input,
+section#about .post #input button{
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-align: center;
+    font-size: var(--font-small);
+    background-color: white;
+}
+section#about .post #input button{
+    margin-left: 1vh;
+}
+section#about .post-what-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-small);
+    margin-top: 5vh;
+    margin-bottom: 0;
+}
+section#about .post-what-content
+.post-image{
+    height:60vh ;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 0;
+    box-shadow: var(--box-shadow);
+    background-size: cover;
+}
+section#about .post-text{
+    padding-top: 2vh;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-size: var(--font-mid);
+}
+section#about i.post-text{
+    font-size: var(--font-small);
+}
+
+section#about .user{
+    margin: 2%;
+    width: 30%;
+    height: 50vh;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-mid);
+    line-height: 5vh;
+    align-items: center;
+    position:sticky;
+    top: 30vh;
+}
+section#about .user .user-picture{
+    position: relative;
+    box-shadow: var(--box-shadow);
+    background-image: url('profile.jpg');
+    top: -10vh;
+    background-size: contain;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
+    z-index: 1;
+}
+section#about .user .user-name{
+    font-size: var(--font-mid);
+}
+section#about .user .user-address{
+    font-size: var(--font-small);
+}
+
+
+footer{
+    justify-content: flex-start;
+    min-height: 50vh;
+}
+footer a{
+    font-size: var(--font-small);
+    text-decoration: none;
+    color: var(--fourth-color);
+}
+
+
+
+header nav#openbars{
+   display: none;
+}
+@media only screen and (max-width: 600px) {
+    header nav{
+        display: none;
+    }
+    header nav#openbars{
+        display: block;
+    }
+    section#services .boxes .box{
+        width: 45%;
+        height: 16vh;
+    }
+    section#services .boxes{
+        width: 90%;
+    }
+    section#about{
+        flex-direction: column;
+    }   
+    section#about .user{
+        width: 80%;
+        margin: auto;
+        position: relative;
+        min-height:50vh;
+        margin-bottom: 30vh;
+    }
+    section#about .post{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+main, form{
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+section#login_form{
+    margin-top: 10vh;
+    box-shadow: var(--box-shadow);
+    width: 40%;
+
+}
+
+
+section#login_form input{
+
+    text-align: center;
+    font-size: var(--font-small);
+    width: 70%;
+    border-radius: 50px;
+    border: none;
+    box-shadow: var(--box-shadow);
+    height: 9vh;
+    margin-bottom: 5vh;
+}
+
+
+    
+
+section#login_form button{
+
+    height: 8vh;
+    width: 70%;
+    background-color: var(--first-color);
+    color: var(--third-color);
+    font-size: var(--font-mid);
+    border-radius: 50px;
+    font-size: var(--font-small);  
+}
+
+section#login_form button:hover{
+    background-color: black;
+}
+
+section#login_form .back{
+
+    display: flex;
+    flex-direction: row-reverse;
+    width: 70%;
+    
+}
+
+section#login_form a{
+    text-decoration: none;
+    color: var(--first-color);
+    
+}
+
+section#login_form a:hover{
+    color:black;
+}
+
+section#login_form #login_more{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 70%;
+}
+

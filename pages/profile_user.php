@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,35 +32,28 @@
     <main>
         <section id="about">
             <div class="user">
-                <div class="user-picture"></div>
-                <div class="user-name">TAKONDWA LABANA</div>
-                <div class="user-address">zingwangwa</div>
-                <div class="user-contact">0387234</div>
+                <div id="user_picture"></div>
+                <div id="user_name" class="input-profile">
+                    <input type="text" id="input_user_name" value="TAKONDWA">
+                </div>
+                <div id="user_address" class="input-profile">
+                    <input type="text" id="input_user_address" value="zingwangwa">
+                </div>
+                <div id="user_contact" class="input-profile">
+                    <input type="text" id="input_user_contact" value="03823423423">
+                </div>
+                <button class="ion-edit" id="edit_profile_btn">edit</button>
+                <div id="result"></div>
             </div>
 
             <div class="post">
                 <div id="post-what">
                     <p>separate what you can do <br> with cammas</p>
                     <div class="input-content">
-                        <span id="input">js <button>exit</button></span>
+                        <span id="input" class="value">js<button class="ion-close"></button></span>
                         <span id="input">
-                            <input type="text" name="post-what"
-                            placeholder="add work" value=""> 
-                            <button>input</button>
-                        </span>
-                        
-                    </div>
-                </div>
-                <div id="post-what">
-                    <p>what have you worked one <br> with cammas</p>
-                    <div class="input-content">
-                        <span id="input">js</span>
-                        <span id="input">jsfdafda</span>
-                        <span id="input">js</span>
-                        <span id="input">
-                            <input type="text" name="post-what"
-                            placeholder="add work" value=""> 
-                            <button>input</button>
+                            <input type="text" id="input_skill" placeholder="add work" > 
+                            <button class="ion-plus" id="add_skill_btn"></button>
                         </span>
                     </div>
                 </div>
@@ -67,18 +61,13 @@
                     <p>what have you <br>
                         worked on with clients</p>
                     <div class="input-content">
-                        <input id="input" type="file" name="post-what"
-                            placeholder="file">
-                        <span id="input">js</span>
-                        <span id="input">jsfdafda</span>
-                        <span id="input">jsdfadfaddf</span>
-                        <span id="input">jsfdafda</span>
-                        <span id="input">jsdfadfaddf</span>
+                        <input id="file" name="file" type="file" placeholder="file">
+                        <span id="input" class="value">js<button class="ion-close"></button></span>
                         <span id="input">
-                            <input type="text" name="post-what"
-                            placeholder="add work" value=""> 
-                            <button>input</button>
+                            <input type="text" id="input_work" placeholder="add work"> 
+                            <button class="ion-plus" id="add_work_btn"></button>
                         </span>
+
                     </div> 
                     <div class="post-what-content">
                         <div class="post-image"
@@ -89,7 +78,7 @@
                             <textarea type="text" name="post-what"
                             placeholder="add work" value="">
                             </textarea>
-                            <button class="">input</button>
+                            <button class="ion-plus"></button>
                         </span>
                         
                     </div>
@@ -114,9 +103,11 @@
     </footer>
 
 
+    <p id="id"></p>
+    
     <!--ajax--->
-    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="resources/main.js">
+    <script src="../resources/jquery-3.6.0.min.js"></script>
+    <script src="../resources/main.js">
     </script>
 </body>
 </html>
